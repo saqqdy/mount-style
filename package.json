@@ -1,7 +1,7 @@
 {
 	"name": "mount-style",
 	"description": "A simple function for mounting css style codes",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"packageManager": "pnpm@8.5.1",
 	"main": "dist/mount-style.cjs.js",
 	"module": "dist/mount-style.esm-bundler.js",

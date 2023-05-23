@@ -12,7 +12,7 @@ export interface StyleOptions {
  * @param option - parameters: attrs, props
  * @returns - results
  */
-function mountStyle(css: string, option: StyleOptions): Promise<boolean> {
+function mountStyle(css: string, option: StyleOptions = {}): Promise<boolean> {
 	if (!css) throw new Error('[mountStyle]: css string is required')
 	const { attrs, props } = option
 	return new Promise(resolve => {
