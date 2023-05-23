@@ -1,6 +1,6 @@
 # Change logs
 
-## 2023.05.23 v1.1.0
+## 2023.05.23 v1.1.1
 
 1. fix outputs
 2. fix option default value

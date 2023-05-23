@@ -3,18 +3,18 @@
 	"description": "A simple function for mounting css style codes",
 	"version": "1.1.0",
 	"packageManager": "pnpm@8.5.1",
-	"main": "dist/mount-style.cjs.js",
-	"module": "dist/mount-style.esm-bundler.js",
-	"browser": "dist/mount-style.esm-browser.js",
-	"unpkg": "dist/mount-style.global.js",
-	"jsdelivr": "dist/mount-style.global.js",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm-bundler.js",
+	"browser": "dist/index.esm-browser.js",
+	"unpkg": "dist/index.global.js",
+	"jsdelivr": "dist/index.global.js",
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"module": "./dist/mount-style.esm-bundler.js",
-			"require": "./dist/mount-style.cjs.js",
-			"import": "./dist/mount-style.mjs"
+			"module": "./dist/index.esm-bundler.js",
+			"require": "./dist/index.cjs.js",
+			"import": "./dist/index.mjs"
 		},
 		"./*": "./*"
 	},
@@ -98,11 +98,8 @@
 	},
 	"keywords": [
 		"mount-style",
-		"es6",
-		"javascript",
-		"js library",
-		"js lib",
-		"js tools",
+		"load-css",
+		"load-style",
 		"saqqdy"
 	],
 	"license": "MIT",

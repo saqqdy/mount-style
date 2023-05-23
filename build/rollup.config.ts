@@ -32,14 +32,14 @@ export interface Options extends RollupOptions {
 const configs: Config[] = [
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.esm-browser.js',
+		file: 'dist/indexrowser.js',
 		format: 'es',
 		browser: true,
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.esm-browser.prod.js',
+		file: 'dist/index.esm-browser.prod.js',
 		format: 'es',
 		browser: true,
 		minify: true,
@@ -47,32 +47,32 @@ const configs: Config[] = [
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.esm-bundler.js',
+		file: 'dist/index.esm-bundler.js',
 		format: 'es',
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.mjs',
+		file: 'dist/index.mjs',
 		format: 'es',
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.global.js',
+		file: 'dist/index.global.js',
 		format: 'iife',
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.global.prod.js',
+		file: 'dist/index.global.prod.js',
 		format: 'iife',
 		minify: true,
 		env: 'production'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/mount-style.cjs.js',
+		file: 'dist/index.cjs.js',
 		format: 'cjs',
 		env: 'development'
 	}
@@ -119,12 +119,12 @@ function createEntry(config: Config) {
 
 	if (config.transpile !== false) {
 		_config.plugins.push(
-				babel({
-					babelHelpers: 'bundled',
-					extensions,
-					exclude: [/node_modules[\\/]core-js/]
-				})
-			)
+			babel({
+				babelHelpers: 'bundled',
+				extensions,
+				exclude: [/node_modules[\\/]core-js/]
+			})
+		)
 		isTypeScript &&
 			_config.plugins.push(
 				typescript({
