@@ -17,6 +17,8 @@ A simple function for mounting css style codes
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
+## This project has been moved to [https://github.com/saqqdy/browsers](https://github.com/saqqdy/browsers/tree/master/packages/mount-style#readme)
+
 </div>
 
 ## Installing
